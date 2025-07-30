@@ -1,22 +1,40 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+// Desafio Super Trunfo - Cidades
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Dados do Rio de Janeiro
+    int codigoRJ = 1;
+    char nomeRJ[] = "Rio de Janeiro";
+    int populacaoRJ = 6748000;           
+    float areaRJ = 1182.3;               
+    float pibRJ = 413.0;                 
+    int pontosTuristicosRJ = 12;
+
+    // Dados do Ceará
+    int codigoCE = 2;
+    char nomeCE[] = "Ceará";
+    int populacaoCE = 9241000;           
+    float areaCE = 148894.4;             
+    float pibCE = 168.3;                 
+    int pontosTuristicosCE = 9;
+
+    // Exibição das cartas
+    printf("--- Carta 1 ---\n");
+    printf("Cidade: %s\n", nomeRJ);
+    printf("Código: %d\n", codigoRJ);
+    printf("População: %d habitantes\n", populacaoRJ);
+    printf("Área: %.2f km²\n", areaRJ);
+    printf("PIB: R$ %.2f bilhões\n", pibRJ);
+    printf("Pontos Turísticos: %d\n", pontosTuristicosRJ);
+
+    printf("\n--- Carta 2 ---\n");
+    printf("Cidade: %s\n", nomeCE);
+    printf("Código: %d\n", codigoCE);
+    printf("População: %d habitantes\n", populacaoCE);
+    printf("Área: %.2f km²\n", areaCE);
+    printf("PIB: R$ %.2f bilhões\n", pibCE);
+    printf("Pontos Turísticos: %d\n", pontosTuristicosCE);
 
     return 0;
 }
